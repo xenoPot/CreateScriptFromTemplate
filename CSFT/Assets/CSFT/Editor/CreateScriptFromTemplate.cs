@@ -18,6 +18,15 @@ static public class CreateScriptFromTemplate {
     }
 
     /// <summary>
+    /// JSの新規スクリプト生成
+    /// </summary>
+    [MenuItem( "Assets/Create/JS Script from user template", false, 80 )]
+    static public void SelectJS()
+    {
+        CreateScript( "Assets/CSFT/JSScriptTemplate.txt", ".js" );
+    }
+
+    /// <summary>
     /// 指定したテンプレートファイルを使ってスクリプト生成を行う
     /// </summary>
     /// <param name="templatePath">テンプレートファイルのパス</param>
